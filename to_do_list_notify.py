@@ -93,10 +93,10 @@ def mail(subject, receiver, cc, detail):
     import smtplib  #加载smtplib模块
     from email.mime.text import MIMEText
     from email.utils import formataddr
-    my_sender='luckyyang201801@163.com' #发件人邮箱账号，为了后面易于维护，所以写成了变量
+    my_sender='XXXXXXXXXXXXX@XXXXXX.com' #发件人邮箱账号，为了后面易于维护，所以写成了变量
     my_smtp='smtp.163.com' #发件人邮箱中的SMTP服务器
     my_smtp_port=25  #发件人邮箱中的SMTP服务器端口号
-    my_passwd="170530" #发件人邮箱密码
+    my_passwd="XXXXXXXXXXXXXXXX" #发件人邮箱密码
     ret=True
     try:
         msg=MIMEText(detail,'plain','utf-8') #'plain'/'html' utf-8支持中文
